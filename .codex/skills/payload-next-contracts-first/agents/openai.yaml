@@ -1,0 +1,7 @@
+interface:
+  display_name: "Payload Next Contracts First"
+  short_description: "Keeps Payload, API, search and UI contracts clean"
+  default_prompt: "Use $payload-next-contracts-first to implement a Payload/Next backend change from contract and boundary to consumer."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Reference To Implementation"
+  short_description: "Turns references into exact implementation"
+  default_prompt: "Use $reference-to-implementation to compare the current UI against a reference and implement only the exact visual mismatches."
+
+policy:
+  allow_implicit_invocation: true

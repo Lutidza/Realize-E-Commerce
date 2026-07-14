@@ -1,0 +1,7 @@
+interface:
+  display_name: "Code Comment Discipline"
+  short_description: "Applies TSDoc headers and docref comments"
+  default_prompt: "Use $code-comment-discipline to add or review TSDoc headers and public API comments for changed source files."
+
+policy:
+  allow_implicit_invocation: true

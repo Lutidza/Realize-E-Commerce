@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Guardrail Audit"
+  short_description: "Read-only аудит frontend-долга против guardrail rules"
+  default_prompt: "Use $frontend-guardrail-audit to run a read-only audit of Realize-E-Commerce Next/React frontend debt before planning cleanup or refactor work."
+
+policy:
+  allow_implicit_invocation: true

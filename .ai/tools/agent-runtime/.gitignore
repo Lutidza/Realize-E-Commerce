@@ -1,0 +1,8 @@
+node_modules/
+runtime/*.sqlite
+runtime/*.sqlite-*
+runtime/maintenance-history/*.json
+runtime/worker-sessions/current-sessions.json
+runtime/worker-sessions/history/*.json
+runtime/worker-sessions/messages/*.jsonl
+runtime/worker-sessions/external/

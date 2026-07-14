@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Runtime Evidence"
+  short_description: "Runtime proof for frontend styling changes"
+  default_prompt: "Use $frontend-runtime-evidence to gather runtime evidence before changing frontend CSS, theme tokens, DOM behavior, or loading UX."
+
+policy:
+  allow_implicit_invocation: true

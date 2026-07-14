@@ -1,0 +1,7 @@
+interface:
+  display_name: "DTO Contracts First"
+  short_description: "Keeps API DTOs safe and explicit"
+  default_prompt: "Use $dto-contracts-first to design or refactor a backend/frontend DTO contract without leaking raw Payload documents."
+
+policy:
+  allow_implicit_invocation: true

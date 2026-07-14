@@ -1,0 +1,7 @@
+interface:
+  display_name: "Синхронизация документации и AI runtime"
+  short_description: "Синхронизирует docs, rules, checks, workflows и skills"
+  default_prompt: "Используй $skill-documentation-sync, чтобы определить owner-layer и синхронизировать docs, .ai runtime artifacts и .codex skills без drift."
+
+policy:
+  allow_implicit_invocation: true

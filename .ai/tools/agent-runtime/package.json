@@ -1,0 +1,19 @@
+{
+  "name": "recommerce-ai-agent-runtime",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24.2.0"
+  },
+  "scripts": {
+    "runtime": "node ./bin/agent-runtime.mjs",
+    "gateway": "node ./bin/agent-runtime.mjs gateway"
+  },
+  "bin": {
+    "agent-runtime": "./bin/agent-runtime.mjs"
+  },
+  "dependencies": {
+    "socket.io": "4.8.3"
+  }
+}

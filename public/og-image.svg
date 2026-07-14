@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#111827"/>
+  <rect x="72" y="72" width="1056" height="486" rx="32" fill="#ffffff"/>
+  <path d="M180 210h330c110 0 178 62 178 151 0 68-41 119-107 139l132 94H535l-111-83H319v83H180V210Zm139 102v99h178c39 0 63-18 63-50 0-31-24-49-63-49H319Z" fill="#111827"/>
+  <text x="760" y="310" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">Realize</text>
+  <text x="760" y="392" fill="#4b5563" font-family="Arial, Helvetica, sans-serif" font-size="42">E-Commerce</text>
+</svg>

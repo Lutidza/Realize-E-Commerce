@@ -1,0 +1,35 @@
+# Project-local Codex adapter config.
+#
+# MCP source of truth:
+# - .codex/config.toml stores project-specific Codex MCP adapter entries.
+# - .ai/rules/external-tools/RULE-MCP-TOOLING-CONTOUR.md stores active policy.
+# - documentation/architecture/mcp-tooling.md stores project-facing context.
+#
+# Runtime note:
+# Codex CLI 0.137.0 reads active MCP servers from CODEX_HOME config
+# (~/.codex/config.toml). Keep this file as the project source of truth and
+# mirror these entries into the active Codex runtime with `codex mcp add`.
+#
+# Do not restore stale MCP entries from transferred layers. Add or update MCP
+# servers only through the MCP tooling workflow, version evidence and secret
+# handling review.
+
+[mcp_servers.recommerce-playwright]
+command = "npx"
+args = ["-y", "@playwright/mcp@0.0.76"]
+
+[mcp_servers.recommerce-tailwind]
+command = "npx"
+args = ["-y", "tailwindcss-mcp-server@0.1.1"]
+
+[mcp_servers.recommerce-next-devtools]
+command = "npx"
+args = ["-y", "next-devtools-mcp@0.3.10"]
+env = { NEXT_TELEMETRY_DISABLED = "1" }
+
+[mcp_servers.recommerce-payload]
+command = "bash"
+args = [
+  "-lc",
+  "exec npx -y mcp-remote@0.1.38 http://127.0.0.1:3000/api/mcp --header \"Authorization: Bearer ${PAYLOAD_MCP_API_KEY:?PAYLOAD_MCP_API_KEY is required}\"",
+]

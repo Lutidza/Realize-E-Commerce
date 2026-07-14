@@ -1,0 +1,7 @@
+interface:
+  display_name: "Feature Decomposition Guard"
+  short_description: "Stops file bloat and mixed ownership"
+  default_prompt: "Use $feature-decomposition-guard to decompose a bloated file or feature slice before continuing implementation."
+
+policy:
+  allow_implicit_invocation: true
